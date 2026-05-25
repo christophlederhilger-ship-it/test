@@ -3,64 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Über uns – MeineWebsite</title>
+  <title>Über uns – Gedankenspur</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
-    <a href="index.html" class="logo">MeineWebsite</a>
-    <nav>
-      <a href="index.html">Startseite</a>
-      <a href="ueber-uns.html" class="active">Über uns</a>
-    </nav>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Gedanken<span>spur</span></a>
+      <nav>
+        <a href="index.html">Blog</a>
+        <a href="ueber-uns.html" class="active">Über uns</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <div class="about-section">
-      <h2>Wer wir sind</h2>
+  <!-- HERO -->
+  <section class="about-hero">
+    <span class="pill">Hinter dem Blog</span>
+    <h1>Wer steckt hinter Gedankenspur?</h1>
+    <p>Menschen, die schreiben, weil sie denken müssen – und teilen, weil sie glauben, dass Worte etwas bewegen.</p>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="about-content">
+
+    <div class="about-block">
+      <h2>Unsere Geschichte</h2>
       <p>
-        MeineWebsite wurde 2020 mit einem einfachen Ziel gegründet: Menschen
-        moderne und zugängliche Lösungen zu bieten. Seitdem wachsen wir
-        kontinuierlich und begleiten unsere Kunden mit Leidenschaft und Expertise.
+        Gedankenspur entstand 2022 aus einer einfachen Frustration: Es gab zu viele
+        schnelle Meinungen und zu wenige langsame Gedanken. Wir wollten einen Ort
+        schaffen, der dem Lesen – und dem Denken dahinter – Raum gibt.
       </p>
       <p>
-        Wir glauben daran, dass gute Arbeit keine Kompromisse kennt – deshalb
-        geben wir in jedem Projekt unser Bestes.
+        Was als kleines Nebenprojekt begann, ist heute ein Blog mit einer wachsenden
+        Community von Lesenden, die Tiefe über Tempo stellen. Wir schreiben über
+        Technologie, Gesellschaft, Kultur und das, was uns persönlich beschäftigt.
+        Immer mit dem Ziel: Einen echten Gedanken hinterlassen.
       </p>
     </div>
 
-    <div class="about-section">
-      <h2>Unsere Werte</h2>
-      <p><strong>Transparenz</strong> – Wir kommunizieren offen und ehrlich mit unseren Kunden und Partnern.</p>
-      <p><strong>Nachhaltigkeit</strong> – Wir handeln verantwortungsvoll gegenüber Mensch und Umwelt.</p>
-      <p><strong>Teamgeist</strong> – Gemeinsam erreichen wir mehr als allein.</p>
-    </div>
-
-    <div class="about-section">
-      <h2>Unser Team</h2>
-      <div class="team">
-        <div class="team-member">
-          <div class="avatar">A</div>
-          <h4>Anna Müller</h4>
-          <span>Geschäftsführerin</span>
+    <div class="about-block">
+      <h2>Was uns antreibt</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">✍️</div>
+          <h4>Tiefe statt Tempo</h4>
+          <p>Wir veröffentlichen lieber einen guten Artikel als zehn mittelmäßige. Qualität hat bei uns immer Vorrang.</p>
         </div>
-        <div class="team-member">
-          <div class="avatar">B</div>
-          <h4>Ben Schneider</h4>
-          <span>Technik &amp; Entwicklung</span>
+        <div class="value-card">
+          <div class="value-icon">🔍</div>
+          <h4>Ehrliche Perspektiven</h4>
+          <p>Wir schreiben, was wir wirklich denken – keine Clickbait-Titel, keine leeren Versprechen.</p>
         </div>
-        <div class="team-member">
-          <div class="avatar">C</div>
-          <h4>Clara Weber</h4>
-          <span>Design &amp; Kreation</span>
+        <div class="value-card">
+          <div class="value-icon">🌱</div>
+          <h4>Offene Fragen</h4>
+          <p>Nicht jeder Text braucht eine Antwort. Manchmal reicht es, die richtigen Fragen zu stellen.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h4>Community first</h4>
+          <p>Unsere Leserinnen und Leser sind Teil des Blogs – ihr Feedback formt, was wir als nächstes schreiben.</p>
         </div>
       </div>
     </div>
-  </main>
 
+    <div class="about-block">
+      <h2>Das Team</h2>
+      <div class="team-grid">
+
+        <div class="member-card">
+          <div class="member-avatar m1">A</div>
+          <h4>Anna Müller</h4>
+          <p class="role">Chefredakteurin</p>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar m2">B</div>
+          <h4>Ben Schneider</h4>
+          <p class="role">Technologie & Kultur</p>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar m3">C</div>
+          <h4>Clara Weber</h4>
+          <p class="role">Design & Kreation</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h2>Mitmachen</h2>
+      <p>
+        Du hast einen Gedanken, der sich nicht schütteln lässt? Wir freuen uns über
+        Gastbeiträge, Leserbriefe und Kooperationen. Schreib uns einfach an
+        <a href="mailto:hallo@gedankenspur.de" style="color: var(--accent); font-weight: 500;">hallo@gedankenspur.de</a>.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-strip">
+    <h3>Kein Artikel mehr verpassen</h3>
+    <p>Einmal pro Woche – kein Spam, versprochen.</p>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" placeholder="deine@email.de" />
+      <button type="submit" class="btn">Abonnieren</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    &copy; 2026 MeineWebsite. Alle Rechte vorbehalten.
+    &copy; 2026 <strong>Gedankenspur</strong> &nbsp;·&nbsp;
+    <a href="index.html">Blog</a> &nbsp;·&nbsp;
+    <a href="ueber-uns.html">Über uns</a>
   </footer>
 
 </body>

@@ -3,44 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Startseite – MeineWebsite</title>
+  <title>Gedankenspur – Ein Blog über das, was zählt</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
-    <a href="index.html" class="logo">MeineWebsite</a>
-    <nav>
-      <a href="index.html" class="active">Startseite</a>
-      <a href="ueber-uns.html">Über uns</a>
-    </nav>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Gedanken<span>spur</span></a>
+      <nav>
+        <a href="index.html" class="active">Blog</a>
+        <a href="ueber-uns.html">Über uns</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Willkommen auf unserer Website</h1>
-      <p>Wir bieten einfache, klare und moderne Lösungen – genau das, was Sie brauchen.</p>
-      <a href="ueber-uns.html" class="btn">Mehr über uns</a>
-    </section>
+  <!-- HERO -->
+  <section class="hero-banner">
+    <span class="pill">Neu erschienen</span>
+    <h1>Gedanken, die einen Unterschied machen</h1>
+    <p>Tiefgründige Artikel über Technologie, Gesellschaft und das Leben zwischen den Zeilen.</p>
+    <div class="btn-row">
+      <a href="#artikel" class="btn">Jetzt lesen</a>
+      <a href="ueber-uns.html" class="btn btn-ghost">Über den Blog</a>
+    </div>
+  </section>
 
-    <section class="cards">
-      <div class="card">
-        <h3>Qualität</h3>
-        <p>Wir legen höchsten Wert auf Qualität in allem, was wir tun.</p>
-      </div>
-      <div class="card">
-        <h3>Verlässlichkeit</h3>
-        <p>Unsere Kunden vertrauen uns – und das seit vielen Jahren.</p>
-      </div>
-      <div class="card">
-        <h3>Innovation</h3>
-        <p>Wir denken voraus und entwickeln zukunftsorientierte Lösungen.</p>
-      </div>
-    </section>
-  </main>
+  <!-- MAIN CONTENT + SIDEBAR -->
+  <div class="page" id="artikel">
 
+    <!-- ── ARTIKEL-LISTE ── -->
+    <main>
+
+      <!-- Featured Post -->
+      <p class="section-label">Highlight</p>
+
+      <a href="#" class="featured-post">
+        <div class="featured-cover">
+          <span class="cover-tag">Essay</span>
+        </div>
+        <div class="featured-body">
+          <div class="featured-meta">
+            <span>Anna Müller</span>
+            <span class="dot">•</span>
+            <span>18. Mai 2026</span>
+            <span class="dot">•</span>
+            <span>8 Min. Lesezeit</span>
+          </div>
+          <h2>Warum wir aufgehört haben, in der Stille zu denken</h2>
+          <p>
+            Ständige Erreichbarkeit, endlose Benachrichtigungen, der Lärm der Feeds –
+            unsere tiefsten Gedanken entstehen nicht mehr. Wie wir uns die Stille
+            zurückerobern können, bevor wir uns selbst vergessen.
+          </p>
+          <span class="read-more">Weiterlesen</span>
+        </div>
+      </a>
+
+      <!-- Post Grid -->
+      <p class="section-label">Aktuelle Beiträge</p>
+
+      <div class="post-grid">
+
+        <a href="#" class="post-card">
+          <div class="post-cover c1"></div>
+          <div class="post-body">
+            <span class="tag">Technologie</span>
+            <h3>KI als Werkzeug – nicht als Ersatz für das Denken</h3>
+            <div class="post-meta">
+              <span>Ben Schneider</span>
+              <span class="dot">•</span>
+              <span>5 Min.</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="post-card">
+          <div class="post-cover c2"></div>
+          <div class="post-body">
+            <span class="tag">Gesellschaft</span>
+            <h3>Das Paradox der Wahl: Warum uns mehr Optionen lähmt</h3>
+            <div class="post-meta">
+              <span>Clara Weber</span>
+              <span class="dot">•</span>
+              <span>6 Min.</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="post-card">
+          <div class="post-cover c3"></div>
+          <div class="post-body">
+            <span class="tag">Kreativität</span>
+            <h3>Leere Seiten und volle Köpfe – über das Schreiben ohne Druck</h3>
+            <div class="post-meta">
+              <span>Anna Müller</span>
+              <span class="dot">•</span>
+              <span>4 Min.</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="post-card">
+          <div class="post-cover c4"></div>
+          <div class="post-body">
+            <span class="tag">Leben</span>
+            <h3>Slow Living – der stille Protest gegen die Beschleunigung</h3>
+            <div class="post-meta">
+              <span>Ben Schneider</span>
+              <span class="dot">•</span>
+              <span>7 Min.</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </main>
+
+    <!-- ── SIDEBAR ── -->
+    <aside class="sidebar">
+
+      <!-- Author -->
+      <div class="sidebar-card author-widget">
+        <div class="author-avatar">A</div>
+        <h3>Anna Müller</h3>
+        <p class="role">Chefredakteurin</p>
+        <p>Ich schreibe über Ideen, die mich nicht loslassen – und hoffe, dass sie auch dich berühren.</p>
+      </div>
+
+      <!-- Recent Posts -->
+      <div class="sidebar-card">
+        <h4>Zuletzt erschienen</h4>
+        <div class="recent-list">
+          <a href="#" class="recent-item">
+            <div class="recent-thumb t1"></div>
+            <div class="recent-info">
+              <p>KI als Werkzeug – nicht als Ersatz</p>
+              <span>12. Mai 2026</span>
+            </div>
+          </a>
+          <a href="#" class="recent-item">
+            <div class="recent-thumb t2"></div>
+            <div class="recent-info">
+              <p>Das Paradox der Wahl</p>
+              <span>3. Mai 2026</span>
+            </div>
+          </a>
+          <a href="#" class="recent-item">
+            <div class="recent-thumb t3"></div>
+            <div class="recent-info">
+              <p>Leere Seiten und volle Köpfe</p>
+              <span>24. Apr. 2026</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Topics -->
+      <div class="sidebar-card">
+        <h4>Themen</h4>
+        <div class="topics">
+          <a href="#" class="topic-pill">Technologie</a>
+          <a href="#" class="topic-pill">Gesellschaft</a>
+          <a href="#" class="topic-pill">Kreativität</a>
+          <a href="#" class="topic-pill">Leben</a>
+          <a href="#" class="topic-pill">Essay</a>
+          <a href="#" class="topic-pill">Kultur</a>
+          <a href="#" class="topic-pill">Philosophie</a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-strip">
+    <h3>Kein Artikel mehr verpassen</h3>
+    <p>Einmal pro Woche – kein Spam, versprochen.</p>
+    <form class="newsletter-form" onsubmit="return false;">
+      <input type="email" placeholder="deine@email.de" />
+      <button type="submit" class="btn">Abonnieren</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    &copy; 2026 MeineWebsite. Alle Rechte vorbehalten.
+    &copy; 2026 <strong>Gedankenspur</strong> &nbsp;·&nbsp;
+    <a href="index.html">Blog</a> &nbsp;·&nbsp;
+    <a href="ueber-uns.html">Über uns</a>
   </footer>
 
 </body>
